@@ -1,6 +1,6 @@
 {
-    "name":"isotope/isotope-core",
-    "description":"Core repository of Isotope eCommerce, an eCommerce extension for Contao Open Source CMS",
+    "name":"systemhaus/isotope-core",
+    "description":"Fork of the popular Contao ecommerce extension",
     "keywords":["contao", "isotope"],
     "type":"contao-module",
     "license":"LGPL-3.0+",
