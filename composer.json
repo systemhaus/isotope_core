@@ -1,5 +1,5 @@
 {
-    "name":"systemhaus/isotope-core",
+    "name":"isotope/isotope-core",
     "description":"Fork of the popular Contao ecommerce extension",
     "keywords":["contao", "isotope"],
     "type":"contao-module",
