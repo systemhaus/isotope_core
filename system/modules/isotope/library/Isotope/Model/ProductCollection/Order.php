@@ -153,7 +153,7 @@ class Order extends ProductCollection implements IsotopePurchasableCollection
      *
      * @return bool
      */
-    public function checkout()
+    public function checkout($do_not_update_status = false)
     {
         if ($this->isCheckoutComplete()) {
             return true;
@@ -213,7 +213,8 @@ class Order extends ProductCollection implements IsotopePurchasableCollection
         }
 
         // Set order status only if a payment module has not already set it
-        if ($this->order_status == 0) {
+        // …or is about to set it
+        if ($this->order_status == 0 && !$do_not_update_status) {
             $this->updateOrderStatus($this->getRelated('config_id')->orderstatus_new);
         }
 

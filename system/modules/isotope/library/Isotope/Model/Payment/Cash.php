@@ -35,7 +35,7 @@ class Cash extends Payment
             return false;
         }
 
-        $objOrder->checkout();
+        $objOrder->checkout(true);
         $objOrder->updateOrderStatus($this->new_order_status);
 
         return true;
