@@ -133,7 +133,7 @@ class Cart extends ProductCollection implements IsotopeOrderableCollection
 
             // Delete cookie
             \System::setCookie(static::$strCookie, '', time() - 3600, $GLOBALS['TL_CONFIG']['websitePath']);
-            \Controller::reload();
+            //\Controller::reload();
         }
     }
 
